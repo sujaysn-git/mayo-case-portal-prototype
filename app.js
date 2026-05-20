@@ -53,9 +53,10 @@ function renderPortalShell() {
   const content = isMember ? renderMemberScreen() : renderAdminScreen();
   return `<div class="portal">
     <header class="topbar">
-      <div class="brand-wrap"><div class="he-logo" aria-label="HealthEquity logo">health<span>equity</span></div><div class="logo-title">Mayo Clinic Case Management Portal</div></div>
-      <nav class="top-links"><a href="#" data-go="${isMember ? 'member-dashboard' : 'admin-dashboard'}">⌂ Home</a><a href="#">✉ Messages</a><a href="#">❖ Support</a><a href="#" data-go="persona">⇢ Logout</a></nav>
-      <div class="logo-title">Mayo Clinic Case Management Portal</div>
+      <div class="brand-wrap">
+        <img class="he-logo-img" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='226' height='58' viewBox='0 0 226 58'><rect width='226' height='58' fill='white'/><text x='0' y='42' font-family='Segoe UI,Arial,sans-serif' font-size='51' fill='%233a2a89' font-weight='500'>Health</text><text x='118' y='42' font-family='Segoe UI,Arial,sans-serif' font-size='51' fill='%23512c91' font-weight='700'>Equity</text></svg>" alt="HealthEquity" />
+        <div class="logo-title">Mayo Clinic Case Management Portal</div>
+      </div>
       <nav class="top-links"><a href="#" data-go="${isMember ? 'member-dashboard' : 'admin-dashboard'}">Home</a><a href="#">Messages</a><a href="#">Support</a><a href="#" data-go="persona">Logout</a></nav>
       <div class="profile">${isMember ? 'Avery Morgan • Member' : 'Patricia Gomez • Mayo Administrator'}</div>
     </header>

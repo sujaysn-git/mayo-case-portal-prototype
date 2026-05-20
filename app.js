@@ -55,6 +55,8 @@ function renderPortalShell() {
     <header class="topbar">
       <div class="brand-wrap"><div class="he-logo" aria-label="HealthEquity logo">health<span>equity</span></div><div class="logo-title">Mayo Clinic Case Management Portal</div></div>
       <nav class="top-links"><a href="#" data-go="${isMember ? 'member-dashboard' : 'admin-dashboard'}">⌂ Home</a><a href="#">✉ Messages</a><a href="#">❖ Support</a><a href="#" data-go="persona">⇢ Logout</a></nav>
+      <div class="logo-title">Mayo Clinic Case Management Portal</div>
+      <nav class="top-links"><a href="#" data-go="${isMember ? 'member-dashboard' : 'admin-dashboard'}">Home</a><a href="#">Messages</a><a href="#">Support</a><a href="#" data-go="persona">Logout</a></nav>
       <div class="profile">${isMember ? 'Avery Morgan • Member' : 'Patricia Gomez • Mayo Administrator'}</div>
     </header>
     <aside class="left-nav">${leftNav(isMember)}</aside>
